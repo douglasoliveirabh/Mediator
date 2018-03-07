@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaTr" Version="4.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mediator.Domain\Mediator.Domain.csproj" />
+    <ProjectReference Include="..\Mediator.Shared\Mediator.Shared.csproj" />
+    <ProjectReference Include="..\Mediator.Application\Mediator.Application.csproj" />
+    <ProjectReference Include="..\Mediator.Infra.Data\Mediator.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
